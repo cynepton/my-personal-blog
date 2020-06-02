@@ -1,0 +1,103 @@
+/*
+Linked fonts are----
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
+
+
+*/
+body {
+    font-size: 20px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80vh 40px 1fr 35px;
+    row-gap: 5px;
+    grid-template-areas:
+    "hd"
+    "nav"
+    "main"
+    "ft";
+  }
+  /* add css for nested grid here */
+  /*.nestedGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+  .nestedGrid > *{
+    border: 2px solid aquamarine;
+  }*/
+.box{
+    
+    background: white;
+    }
+    .header{
+      /* row start/column start/ row end/ column end */
+        display: flex;
+        grid-area:hd;
+        background-image: url(../image/sorasak-unsplash.jpg);
+        background-size: cover;
+        font-family: "PT Sans", sans-serif;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .footer{
+        display: flex;
+        background-color: #252423;
+        grid-area: ft;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: small;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        grid-area: nav;
+        background-color: #252423;
+    }
+    .post{
+        display: flex;
+        grid-area: main;
+        flex-direction: row;
+    }
+        .postImage{
+            width: 16vh;
+            background-color: tomato;
+            height: 16vh;
+            border-radius: 50%;
+        }
+        .postDetail{
+            width: 1fr;
+            background-image: yellow;
+            min-height: 16vh;
+        }
+
+  /* If Screen Is Wide Enough */
+  @media(min-width:900px) {
+  .container{
+        display:grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "nav nav main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+        border: 2px solid red;
+    }
+  }
