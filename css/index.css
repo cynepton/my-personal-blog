@@ -1,15 +1,25 @@
+/* Import external CSS files */
+@import url(text-formatting.css);
+@import url(header.css);
+
 /*
 Linked fonts are----
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'PT Sans', sans-serif;
-
-
 */
 body {
-    font-size: 20px;
+    font-size: 14px;
     color: white;
     font-family: 'Open Sans', sans-serif;
+    line-height: 4px;
+}
+/* p {
+    
+} */
+a {
+    text-decoration: none;
+    color: white;
 }
 
 h1,
@@ -21,10 +31,10 @@ h6 {
     font-family: 'PT Sans', sans-serif;
 }
 
-.container{
+.container {
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80vh 40px 1fr 35px;
+    grid-template-rows: 70vh 40px 1fr 35px;
     row-gap: 5px;
     grid-template-areas:
     "hd"
@@ -41,23 +51,25 @@ h6 {
   .nestedGrid > *{
     border: 2px solid aquamarine;
   }*/
-.box{
+.box {
     
     background: white;
     }
-    .header{
+    .header {
       /* row start/column start/ row end/ column end */
         display: flex;
         grid-area:hd;
-        background-image: url(../image/sorasak-unsplash.jpg);
+        background-image: url(../image/daniel-loska-unsplash.jpg);
         background-size: cover;
         font-family: "PT Sans", sans-serif;
         color: white;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
-        
+        flex-direction: column;
     }
-    .footer{
+        
+
+    .footer {
         display: flex;
         background-color: #252423;
         grid-area: ft;
@@ -67,25 +79,51 @@ h6 {
         justify-content: center;
         align-items: center;
     }
-    .navbar{
+    .navbar {
         grid-area: nav;
         background-color: #252423;
     }
-    .post{
+    .bodybox {
         display: flex;
-        grid-area: main;
-        flex-direction: row;
+        width: 100%;
+        flex-direction: column;
     }
-        .postImage{
-            width: 16vh;
-            background-color: tomato;
-            height: 16vh;
+    .post {
+        display: grid;
+        grid-area: main;
+        grid-template-areas: 
+        "postimg postdetail";
+        grid-template-columns: 20vw 1fr;
+        grid-template-rows: 20vw;
+        column-gap: 3vw;
+        justify-content: space-between;
+        width: 1fr;
+    }
+        .postImage {
+            grid-area: postimg;
+            /* width: 20vw; */
+            background-image: url(../image/lucky-neko-unsplash.jpg);
+            /* height: 20vw; */
             border-radius: 50%;
+            background-size: cover;
         }
-        .postDetail{
-            width: 1fr;
-            background-image: yellow;
-            min-height: 16vh;
+        .postDetail {
+            grid-area: postdetail;
+            border-radius: 10px;
+            padding-left: 12px;
+            padding-top: 5px;
+            /* width: 75vw; */
+            background-color: #252423;
+            /* height: 20vw; */
+        }
+            #longLine {
+                font-size: x-large;
+            }
+
+        .emptySpace {
+            width: 100%;
+            height: 1vh;
+            background-color: transparent;
         }
 
   /* If Screen Is Wide Enough */
