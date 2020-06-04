@@ -15,6 +15,8 @@ All images are gotten from [Unsplash](https://unsplash.com/). A free image libra
 
 - [![Blanket kitty](image/ramiz-dedakovic-unsplash.jpg)](https://unsplash.com/photos/jerh2Nj1XWY)
 
+- [![Little kitty](image/ramiz-dedakovic-unsplash-2.jpg)](https://unsplash.com/photos/bmGy-eqrl1k)
+
 4. Photographer: [Daniel Loska](https://unsplash.com/@magruder)
 
 - [![Bright Eyes](image/daniel-loska-unsplash.jpg)](https://unsplash.com/photos/0OFRHebhBzk)
