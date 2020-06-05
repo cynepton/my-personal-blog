@@ -5,7 +5,7 @@
         <meta name="description" content="Example" />
 
         <!-- Title tag  -->
-        <title>Isaac's Personal Blog Website</title>
+        <title>Isaac's Cat Blog</title>
 
         <!-- Main CSS file  -->
         <link href="css/index.css" rel="stylesheet">
@@ -20,24 +20,34 @@
         <div class = "container">
             <div class= "header box">
                 <p>
-                    <h1>Isaac's Blog</h1>
+                    <h1 class="blog-Title-Text">A Cat Blog</h1>
                 </p>
-                <br>
-                <p>My Personal Blog Website</p>
             </div>
 
             <div class= "navbar">
+                <div class="navbar-item" id="navbar-item-first">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="index.html">Posts</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="index.html">About</a>
+                </div>
+                <div class="navbar-item" id="navbar-item-last">
+                    <a href="index.html">Contact</a>
+                </div>
             </div>
 
             <div class="bodybox">
                 <!-- First Post -->
-                <div class= "post">
-                    <div class= "postImage">
+                <div class= "post" >
+                    <div class= "postImage" id="post1">
 
                     </div>
 
                     <div class= "postDetail">
-                        <a href="index.html">
+                        <a href="html/blog-post.html">
                             <p>
                                 <h2 class= "postHeader2">
                                 Cats Need Siblings too!
@@ -59,7 +69,7 @@
 
                 <!-- Second Post -->
                 <div class= "post">
-                    <div class= "postImage">
+                    <div class= "postImage" id="post2">
 
                     </div>
 
@@ -84,9 +94,9 @@
 
                 </div>
 
-                <!-- Second Post -->
+                <!-- Third Post -->
                 <div class= "post">
-                    <div class= "postImage">
+                    <div class= "postImage" id="post3">
 
                     </div>
 
@@ -108,7 +118,7 @@
             </div>
 
             <div class= "footer box">
-                <p>copyright &copy; 2020</p>
+                <p><b>copyright &copy; 2020</b></p>
             </div>
         </div>
     </body>

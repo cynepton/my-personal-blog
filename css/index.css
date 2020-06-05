@@ -1,6 +1,8 @@
 /* Import external CSS files */
 @import url(text-formatting.css);
 @import url(header.css);
+@import url(navigation.css);
+
 
 /*
 Linked fonts are----
@@ -34,7 +36,7 @@ h6 {
 .container {
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70vh 40px 1fr 35px;
+    grid-template-rows: 70vh 30px 1fr 35px;
     row-gap: 5px;
     grid-template-areas:
     "hd"
@@ -81,7 +83,11 @@ h6 {
     }
     .navbar {
         grid-area: nav;
+        display: flex;
+        flex-direction: row;
         background-color: #252423;
+        justify-content: space-between;
+        align-items: center;
     }
     .bodybox {
         display: flex;
@@ -102,11 +108,19 @@ h6 {
         .postImage {
             grid-area: postimg;
             /* width: 20vw; */
-            background-image: url(../image/lucky-neko-unsplash.jpg);
             /* height: 20vw; */
             border-radius: 50%;
             background-size: cover;
         }
+            #post1 {
+                background-image: url(../image/lucky-neko-unsplash.jpg);
+            }
+            #post2 {
+                background-image: url(../image/ramiz-dedakovic-unsplash-2.jpg);
+            }
+            #post3 {
+                background-image: url(../image/ramiz-dedakovic-unsplash.jpg);
+            }
         .postDetail {
             grid-area: postdetail;
             border-radius: 10px;
