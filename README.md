@@ -20,3 +20,7 @@ All images are gotten from [Unsplash](https://unsplash.com/). A free image libra
 4. Photographer: [Daniel Loska](https://unsplash.com/@magruder)
 
 - [![Bright Eyes](image/daniel-loska-unsplash.jpg)](https://unsplash.com/photos/0OFRHebhBzk)
+
+4. Photographer: [Zoritsa Valova](https://unsplash.com/@xpipzzyx)
+
+- [![Tabby Kitten](image/zoritsa-valova-unsplash.jpg)](https://unsplash.com/photos/O0FLjjTSku4)
