@@ -1,14 +1,23 @@
 /* the items contained in the navigation bar */
-.navbar-item {
-    width: 1fr;
-    background-color: transparent;
-    text-decoration: underline;
-    /* color: white; */
-}
+    .navbar-item {
+        width: 1fr;
+        background-color: transparent;
+        text-decoration: underline;
+        /* color: white; */
+    }
 
+        #navbar-item-first {
+            padding-left: 2vw;
+        }
+        #navbar-item-last {
+            padding-right: 2vw;
+        }
+
+@media(min-width:600px) and (max-width:1000px){
     #navbar-item-first {
-        padding-left: 2vw;
+        padding-left: 0;
     }
     #navbar-item-last {
-        padding-right: 2vw;
+        padding-right: 0;
     }
+}
