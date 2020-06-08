@@ -1,0 +1,67 @@
+@import url(navigation.css);
+@import url(text-formatting.css);
+
+body {
+    /* font-size: 11px; */
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    /* line-height: 4px; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    display:grid;
+    grid-template-rows: 30vh 30px 1fr 30px;
+    grid-template-areas:
+    "hd"
+    "nav"
+    "posts"
+    "ft";
+    /* border: 2px solid black; */
+}
+
+    .box{
+        width: 100%;
+        /* border: 1px solid red; */
+        /* background: #F8FA9D; */
+    }
+
+        .header{
+            display: flex;
+            grid-area:hd;
+            background-image: url(../image/zoritsa-valova-unsplash.jpg);
+            background-size: contain;
+            font-family: "PT Sans", sans-serif;
+            /* color: white; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .footer{
+            display: flex;
+            background-color: #252423;
+            grid-area: ft;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: small;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar{
+            grid-area: nav;
+            display: flex;
+            flex-direction: row;
+            background-color: #252423;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content{
+            grid-area: posts;
+            color: black;
+        }
