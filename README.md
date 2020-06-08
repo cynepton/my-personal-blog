@@ -1,4 +1,9 @@
 # Personal Blog Website
+In this project I utilize my HTML and CSS skills to build out a personal blog website, including custom images, layout, and styling. Along with webpage design considerations, I worked to appropriately structure my files, as well as use proper CSS and HTML formatting & style.
+
+
+## Github Repository Link
+[https://github.com/cynepton/my-personal-blog](https://github.com/cynepton/my-personal-blog)
 
 ## Images Credits
 All images are gotten from [Unsplash](https://unsplash.com/). A free image library for personal and commercial purposes. The site's license allows users to not have to credit the authors, but I am using this section to attribute all images to their original creators.
