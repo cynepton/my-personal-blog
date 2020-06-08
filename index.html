@@ -2,10 +2,124 @@
 <html>
     <head>
         <meta charset="utf-8" />
-            <title>Template Title!</title>
         <meta name="description" content="Example" />
+
+        <!-- Title tag  -->
+        <title>Isaac's Cat Blog</title>
+
+        <!-- Main CSS file  -->
+        <link href="css/index.css" rel="stylesheet">
+
+        <!-- 
+        Google fonts 
+        Fonts included are Montserrat, PT Sans and Open Sans
+        -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <p>Hello World!</p>
+        <div class = "container">
+            <header class= "header">
+                <p>
+                    <h1 class="blog-Title-Text">A Cat Blog</h1>
+                </p>
+            </header>
+
+            <div class= "navbar">
+                <div class="navbar-item" id="navbar-item-first">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="html/blog-post.html">Posts</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="index.html">About</a>
+                </div>
+                <div class="navbar-item" id="navbar-item-last">
+                    <a href="index.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="bodybox">
+                <!-- First Post -->
+                <div class= "post" >
+                    <div class= "postImage" id="post1">
+
+                    </div>
+
+                    <div class= "postDetail">
+                        <a href="html/blog-post.html">
+                            <p>
+                                <h2 class= "postHeader2">
+                                Cats Need Siblings too!
+                                </h2>
+                            </p>
+                            <p>
+                                <b>If you love one, you will definitely love three!</b>
+                            </p>
+                        </a>
+                        <p class="postDate"><em>Posted on June 05, 2020</em>
+                        </p>     
+                    </div>                
+                </div>
+
+                <!-- Empty Space -->
+                <div class= "emptySpace">
+
+                </div>
+
+                <!-- Second Post -->
+                <div class= "post">
+                    <div class= "postImage" id="post2">
+
+                    </div>
+
+                    <div class= "postDetail">
+                        <a href="index.html">
+                            <p>
+                                <h2 class= "postHeader2">
+                                Young cats need to grow
+                                </h2>
+                            </p>
+                            <p>
+                                <b>Find out what foods are best for your kittens</b>
+                            </p>
+                        </a>
+                        <p class="postDate"><em>Posted on June 04, 2020</em>
+                        </p>     
+                    </div>                
+                </div>
+
+                <!-- Empty Space -->
+                <div class= "emptySpace">
+
+                </div>
+
+                <!-- Third Post -->
+                <div class= "post">
+                    <div class= "postImage" id="post3">
+
+                    </div>
+
+                    <div class= "postDetail">
+                        <a href="index.html">
+                            <p>
+                                <h2 class= "postHeader2" id= "longLine">
+                                    Cats need a Fur-care routine
+                                </h2>
+                            </p>
+                            <p>
+                                <b>Keep their Furs Furry</b>
+                            </p>
+                        </a>
+                        <p class="postDate"><em>Posted on June 03, 2020</em>
+                        </p>     
+                    </div>                
+                </div>
+            </div>
+
+            <footer class= "footer">
+                <p>copyright &copy; 2020</p>
+            </footer>
+        </div>
     </body>
 </html>

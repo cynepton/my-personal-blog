@@ -1,0 +1,18 @@
+/* This CSS file contains class rules for the custom text appearance of the texts in the website*/
+
+/* Blog Name */
+.blog-Title-Text {
+    font-size: 7vh;
+}
+/* This class is used for the main title of each article in the index.html file 
+*/
+.postHeader2{
+    font-size: xx-large;
+}
+
+/* This class is used for the article post date  
+*/
+.postDate{
+    color: rgb(206, 206, 214);
+    font-size: x-small;
+}
