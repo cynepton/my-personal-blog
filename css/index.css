@@ -1,0 +1,209 @@
+/* Import external CSS files */
+@import url(text-formatting.css);
+@import url(header.css);
+@import url(navigation.css);
+
+
+/*
+Linked fonts are----
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
+*/
+body {
+    font-size: 14px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 4px;
+}
+p {
+    line-height: 16px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh 30px 1fr 35px;
+    row-gap: 5px;
+    grid-template-areas:
+    "hd"
+    "nav"
+    "main"
+    "ft";
+  }
+
+.box {
+    
+    background: white;
+    }
+    .header {
+      /* row start/column start/ row end/ column end */
+        display: flex;
+        grid-area:hd;
+        background-image: url(../image/daniel-loska-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: "PT Sans", sans-serif;
+        color: white;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        border: 4px solid black;
+    }
+        
+
+    .footer {
+        display: flex;
+        background-color: #252423;
+        grid-area: ft;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: small;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        background-color: #252423;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .navbar-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+        }
+
+    .bodybox {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .post {
+        display: grid;
+        grid-area: main;
+        grid-template-areas: 
+        "postimg postdetail";
+        grid-template-columns: 20vw 1fr;
+        grid-template-rows: 20vw;
+        column-gap: 3vw;
+        justify-content: space-between;
+        width: 1fr;
+    }
+        .postImage {
+            grid-area: postimg;
+            /* width: 20vw; */
+            /* height: 20vw; */
+            border-radius: 50%;
+            background-size: cover;
+        }
+            #post1 {
+                background-image: url(../image/lucky-neko-unsplash.jpg);
+            }
+            #post2 {
+                background-image: url(../image/ramiz-dedakovic-unsplash-2.jpg);
+            }
+            #post3 {
+                background-image: url(../image/ramiz-dedakovic-unsplash.jpg);
+            }
+        .postDetail {
+            grid-area: postdetail;
+            border-radius: 10px;
+            padding-left: 12px;
+            padding-top: 5px;
+            /* width: 75vw; */
+            background-color: #252423;
+            /* height: 20vw; */
+        }
+            #longLine {
+                font-size: x-large;
+            }
+
+        .emptySpace {
+            width: 100%;
+            height: 1vh;
+            background-color: transparent;
+        }
+
+/* Medium Screen */
+@media(min-width:600px) and (max-width:1000px) {
+    
+    .container{
+        display:grid;
+        grid-template-columns: 15vw 85vw;
+        grid-template-rows: 1fr 1fr 35px;
+        grid-template-areas: 
+        "hd hd"
+        "nav main"
+        "ft ft";
+        /* border: 2px solid black; */
+    }
+    
+    .navbar {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        background-color: #252423;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .navbar-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 300px;
+        font-size: 32px;
+        /* border: 2px solid white; */
+    }
+}
+
+/* wide screen */
+@media(min-width:1001) {
+    
+    .container{
+        display:grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 1fr 30px 1fr 35px;
+        row-gap: 5px;
+        grid-template-areas:
+        "hd"
+        "nav"
+        "main"
+        "ft";
+        /* border: 2px solid black; */
+    }
+
+    .header {
+        /* row start/column start/ row end/ column end */
+        display: flex;
+        grid-area:hd;
+        background-image: url(../image/daniel-loska-unsplash.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-family: "PT Sans", sans-serif;
+        color: white;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        border: 4px solid black;
+      }
+}

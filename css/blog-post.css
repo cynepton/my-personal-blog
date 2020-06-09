@@ -15,6 +15,7 @@ a {
 
 .container{
     display:grid;
+    width: 100vw;
     grid-template-rows: 30vh 30px 1fr 30px;
     grid-template-areas:
     "hd"
