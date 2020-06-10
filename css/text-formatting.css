@@ -16,3 +16,7 @@
     color: rgb(206, 206, 214);
     font-size: x-small;
 }
+
+.smallfont {
+    font-size: .8em;
+}

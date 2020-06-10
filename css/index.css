@@ -1,8 +1,8 @@
 /* Import external CSS files */
-@import url(text-formatting.css);
-@import url(header.css);
-@import url(navigation.css);
-@import url(button.css);
+@import "text-formatting.css";
+@import "header.css";
+@import "navigation.css";
+@import "button.css";
 
 
 /*
@@ -36,8 +36,8 @@ h6 {
 
 .container {
     display:grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 1fr 30px 1fr 35px;
+    grid-template-columns: 98vw;
+    grid-template-rows: 20vh 30px 1fr 35px;
     row-gap: 5px;
     grid-template-areas:
     "hd"
@@ -54,15 +54,16 @@ h6 {
       /* row start/column start/ row end/ column end */
         display: flex;
         grid-area: hd;
-        background-image: url(../image/daniel-loska-unsplash.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+        /* background-image: url(../image/daniel-loska-unsplash.jpg); */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
         font-family: "PT Sans", sans-serif;
         color: white;
         justify-content: end;
         align-items: center;
         flex-direction: column;
-        border: 4px solid black;
+        /* border: 4px solid black; */
+        background-color: #252423;
     }
         
 
@@ -151,7 +152,7 @@ h6 {
     .container {
         display: grid;
         grid-template-columns: 15vw 85vw;
-        grid-template-rows: 1fr 1fr 35px;
+        grid-template-rows: 40vh 1fr 35px;
         grid-template-areas: 
         "hd hd"
         "nav main"
@@ -170,11 +171,12 @@ h6 {
     .navbar-box {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         height: 300px;
-        font-size: 32px;
-        border: 2px solid white;
+        font-size: 22px;
+        /* border: 2px solid white; */
+        color: white;
     }
 }
 
@@ -184,7 +186,7 @@ h6 {
     .container{
         display:grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 1fr 30px 1fr 35px;
+        grid-template-rows: 40vh 30px 1fr 35px;
         row-gap: 5px;
         grid-template-areas:
         "hd"
@@ -198,14 +200,15 @@ h6 {
         /* row start/column start/ row end/ column end */
         display: flex;
         grid-area:hd;
-        background-image: url(../image/daniel-loska-unsplash.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
+        /* background-image: url(../image/daniel-loska-unsplash.jpg); */
+        /* background-size: contain; */
+        /* background-repeat: no-repeat; */
         font-family: "PT Sans", sans-serif;
         color: white;
         justify-content: end;
         align-items: center;
         flex-direction: column;
         /* border: 4px solid black; */
+        background-color: #252423;
     }
 }
